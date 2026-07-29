@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="来去山——关于技术、生活与内心秩序的个人博客。">
+  <meta name="theme-color" content="#f2efe6">
+  <title>来去山｜在尘出尘</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="来去山首页"><span class="seal">来</span><span>来去山</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+    <nav id="site-nav" class="site-nav" aria-label="主导航">
+      <a class="active" href="#articles">文章</a><a href="#about">关于</a>
+      <button class="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">◐</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">MOUNT COME &amp; GO · 随笔与见闻</p>
+        <h1 id="hero-title">需要时走入人间，<br>不需要时转身归山。</h1>
+        <p class="hero-note">在代码与山水之间，留下一些关于技术、生活和内心秩序的文字。</p>
+        <a class="down-link" href="#articles">沿山径读下去 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="mountain" aria-hidden="true">
+        <span class="sun"></span>
+        <svg viewBox="0 0 700 430" role="presentation">
+          <path class="ridge far" d="M0 356 C88 300 120 326 195 266 C252 220 280 242 333 188 C395 125 435 156 488 209 C546 268 604 243 700 310 V430 H0Z"/>
+          <path class="ridge mid" d="M0 385 C90 353 143 355 226 286 C279 242 328 267 379 317 C429 365 472 331 523 286 C578 238 632 300 700 341 V430 H0Z"/>
+          <path class="ridge near" d="M0 401 C105 368 183 399 265 354 C341 312 398 388 470 361 C561 326 611 371 700 360 V430 H0Z"/>
+        </svg>
+        <span class="traveler"></span>
+      </div>
+    </section>
+    <section id="articles" class="articles section-wrap" aria-labelledby="articles-title">
+      <div class="section-heading"><div><p class="eyebrow">山中手记</p><h2 id="articles-title">近来所写</h2></div><p>不逐热闹，只记真实。</p></div>
+      <div class="article-list">
+        <article class="featured-article"><a href="posts/见山不是山.html"><div class="article-meta"><time datetime="2026-07-30">2026.07.30</time><span>思考</span></div><h3>见山不是山，然后仍旧去写代码</h3><p>所谓出世，并不是逃离日常；是在纷繁里仍能看见事情原本的样子。</p><span class="read-more">阅读全文 <span aria-hidden="true">↗</span></span></a></article>
+        <article><div class="article-meta"><time datetime="2026-07-23">2026.07.23</time><span>技术</span></div><h3>把复杂留在系统里，把简单交给使用者</h3><p>好的技术不是炫技，是让人感受不到技术的存在。</p><span class="coming">整理中</span></article>
+        <article><div class="article-meta"><time datetime="2026-07-16">2026.07.16</time><span>生活</span></div><h3>忙里偷闲，不如忙而不乱</h3><p>真正的从容不是拥有大把空闲，而是在任何处境里都有自己的节奏。</p><span class="coming">整理中</span></article>
+      </div>
+    </section>
+    <section id="about" class="about section-wrap" aria-labelledby="about-title">
+      <div class="about-mark" aria-hidden="true">山<br>下<br>见</div>
+      <div><p class="eyebrow">关于此山</p><h2 id="about-title">心有所住，身无所拘。</h2><p>“来去山”不是隐居地，而是一种姿态：能入世做事，也能抽身观照；认真生活，却不被生活裹挟。这里记录我的技术实践、读书所思，以及偶尔吹过案头的一阵风。</p></div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap"><p>© <span id="year"></span> 来去山</p><p>来时认真，去时从容。</p><a href="https://github.com/jingsanjing1995/laiqushan" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>
