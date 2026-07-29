@@ -29,8 +29,8 @@ button { color: inherit; font: inherit; }
 .theme-toggle, .menu-button { border: 0; background: transparent; cursor: pointer; }
 .theme-toggle { padding: 8px; font-size: 20px; }
 .menu-button { display: none; font-family: var(--sans); }
-.hero { min-height: 690px; width: min(1260px, 100%); margin-inline: auto; position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; overflow: hidden; }
-.hero-copy { padding-left: max(24px, calc((100vw - 1160px) / 2)); z-index: 2; display: grid; grid-template-columns: auto minmax(230px, 390px); column-gap: 38px; row-gap: 34px; align-items: end; }
+.hero { min-height: 690px; width: min(1260px, 100%); margin-inline: auto; position: relative; display: grid; grid-template-columns: minmax(0, 50%) minmax(50%, 1fr); align-items: center; overflow: hidden; }
+.hero-copy { min-width: 0; padding-left: max(24px, calc((100vw - 1160px) / 2)); z-index: 2; display: grid; grid-template-columns: auto minmax(230px, 390px); column-gap: 38px; row-gap: 34px; align-items: end; }
 .hero-copy .eyebrow { grid-column: 1 / -1; margin-bottom: 0; }
 .eyebrow { margin: 0 0 24px; color: var(--vermillion); font: 500 11px/1.4 var(--sans); letter-spacing: .25em; text-transform: uppercase; }
 h1 { margin: 0; font-size: clamp(42px, 4.5vw, 70px); line-height: 1.32; font-weight: 500; letter-spacing: .04em; }
