@@ -50,7 +50,7 @@ h1 { margin: 0; font-size: clamp(42px, 4.5vw, 70px); line-height: 1.32; font-wei
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 58px; }
 .section-heading h2, .about h2 { margin: 0; font-size: clamp(34px, 4vw, 54px); font-weight: 500; }
 .section-heading > p { color: var(--muted); font-size: 14px; }
-.article-list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; border-top: 1px solid var(--line); }
+.article-list { display: grid; grid-template-columns: 1.25fr 1fr 1fr 1fr; border-top: 1px solid var(--line); }
 .article-list article { min-height: 360px; padding: 34px; border-right: 1px solid var(--line); display: flex; flex-direction: column; }
 .article-list article:first-child { padding-left: 0; }
 .article-list article:last-child { border-right: 0; }
@@ -98,3 +98,71 @@ h1 { margin: 0; font-size: clamp(42px, 4.5vw, 70px); line-height: 1.32; font-wei
   .site-footer p:nth-child(2) { order: 3; width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+
+/* Library */
+.article-list { grid-template-columns: 1.25fr 1fr 1fr 1fr; }
+.library-entry-card > a { height: 100%; display: flex; flex-direction: column; }
+.library-entry-card:hover h3 { color: var(--vermillion); }
+.library-hero { padding: 110px 0 44px; }
+.library-hero h1, .book-header h1 { max-width: 860px; margin: 0; font-size: clamp(40px, 5vw, 68px); line-height: 1.35; font-weight: 500; }
+.library-hero > p:not(.eyebrow) { max-width: 760px; margin: 28px 0 0; color: var(--muted); font-size: 17px; line-height: 2; }
+.library-stats { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 42px; font-family: var(--sans); }
+.library-stats span { min-width: 136px; padding: 18px 20px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.library-stats strong { display: block; font-size: 28px; color: var(--ink); font-weight: 500; }
+.library-stats small { color: var(--muted); font-size: 12px; }
+.library-jump { position: sticky; top: 0; z-index: 5; display: flex; gap: 12px; flex-wrap: wrap; padding: 18px 0; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(18px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.library-jump a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 0; margin-right: 18px; color: var(--muted); font: 13px var(--sans); }
+.library-jump a:hover { color: var(--vermillion); }
+.library-jump span { color: var(--vermillion); font-size: 11px; }
+.library-section { padding: 72px 0 34px; border-bottom: 1px solid var(--line); }
+.library-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 32px; }
+.library-heading h2 { margin: 0; font-size: clamp(34px, 4vw, 54px); font-weight: 500; }
+.library-heading > p { margin: 0; color: var(--muted); font: 13px var(--sans); }
+.collection-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.collection-card { padding: 26px; border: 1px solid var(--line); background: color-mix(in srgb, var(--paper-deep) 34%, transparent); }
+.collection-card-head { display: flex; align-items: start; justify-content: space-between; gap: 18px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.collection-card h3 { margin: 0; font-size: 22px; line-height: 1.45; font-weight: 500; }
+.collection-card-head span { white-space: nowrap; color: var(--vermillion); font: 12px var(--sans); }
+.book-link-list { margin: 18px 0 0; padding: 0; list-style: none; columns: 2 180px; column-gap: 22px; }
+.book-link-list li { break-inside: avoid; margin: 0 0 10px; color: var(--muted); font: 14px/1.65 var(--sans); }
+.book-link-list a:hover { color: var(--vermillion); }
+.book-page { border-top: 1px solid var(--line); }
+.book-header { padding: 92px 0 54px; }
+.book-header h1 { max-width: 980px; }
+.post-meta { margin-top: 28px; color: var(--muted); font: 12px/1.8 var(--sans); letter-spacing: .08em; }
+.book-body { width: min(860px, calc(100% - 42px)); margin-inline: auto; padding: 62px 0 120px; border-top: 1px solid var(--line); font-size: 18px; line-height: 2.08; }
+.book-body p { margin: 0 0 1.55em; }
+.book-body h2, .book-body h3, .book-body h4 { margin: 2.4em 0 1em; font-weight: 500; line-height: 1.45; }
+.book-body h2 { font-size: 30px; }
+.book-body h3 { font-size: 24px; }
+.book-body h4 { font-size: 20px; }
+.book-body a { color: var(--vermillion); border-bottom: 1px solid color-mix(in srgb, var(--vermillion) 42%, transparent); }
+.book-body blockquote { margin: 2em 0; padding: 10px 0 10px 26px; border-left: 2px solid var(--vermillion); color: var(--muted); font-size: 19px; }
+.book-body hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0; }
+.book-body ul, .book-body ol { margin: 0 0 1.6em; padding-left: 1.4em; }
+.book-body li { margin: 0 0 .45em; }
+.book-body code { font-family: Consolas, "SFMono-Regular", monospace; font-size: .9em; background: color-mix(in srgb, var(--paper-deep) 60%, transparent); padding: .12em .32em; }
+.book-body pre { overflow-x: auto; padding: 18px 20px; background: color-mix(in srgb, var(--paper-deep) 55%, transparent); border: 1px solid var(--line); }
+.book-body pre code { padding: 0; background: transparent; }
+.table-wrap { overflow-x: auto; margin: 1.8em 0; }
+.book-body table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.7; }
+.book-body th, .book-body td { padding: 10px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.book-body th { color: var(--ink); background: color-mix(in srgb, var(--paper-deep) 55%, transparent); font-weight: 500; }
+.book-back { margin-top: 54px; font: 13px var(--sans); }
+
+@media (max-width: 960px) {
+  .article-list { grid-template-columns: 1fr 1fr; }
+  .collection-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 800px) {
+  .article-list { grid-template-columns: 1fr; }
+  .library-hero { padding: 72px 0 34px; }
+  .library-stats span { min-width: 112px; padding: 14px 0; }
+  .library-jump { position: static; }
+  .collection-grid { grid-template-columns: 1fr; gap: 16px; }
+  .collection-card { padding: 22px; }
+  .book-link-list { columns: 1; }
+  .book-header { padding: 70px 0 42px; }
+  .book-body { font-size: 17px; padding-bottom: 88px; }
+}
